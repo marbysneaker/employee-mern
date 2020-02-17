@@ -47,7 +47,7 @@ employeeRouter.delete('/:id',(req, res) => {
                 msgBody:"unable to delete Employee",
                 msgError: true
             }})
-        };
+        }
         else{
             res.status(200).json({message:{
                 msgBody:"successfully Added Employee",
@@ -64,7 +64,7 @@ employeeRouter.put(':id',(req,res)=>{
                 msgBody:"unable to update employee",
                 msgError: true
             }})
-        };
+        }
         else{
             res.status(200).json({message:{
                 msgBody:"successfully updated employee",
